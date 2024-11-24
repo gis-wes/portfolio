@@ -1,0 +1,279 @@
+#database {
+    display:none;
+}
+
+.dataImageSource {
+    width:100%;
+}
+
+.dataImageSourceTall {
+    height:90%;
+}
+
+a,a:visited,a:link {
+    color:white;
+    text-underline-offset: 2pt;
+}
+
+.backIcon {
+    margin:0px;
+    background-color:white;
+    background-size: 325px;
+    background-repeat: no-repeat;
+    background-position: top;
+    font-family: Helvetica, sans-serif;
+    height:85%;
+}
+
+.backIconDesc {
+    height:15%;
+    background-color:white; 
+    color:gray;
+    font-size:10pt;
+    padding-top:10px;
+}
+
+.back {
+    margin:0px;
+    background-color:black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    font-family: Helvetica, sans-serif;
+}
+
+@media all and (orientation: landscape) {
+    .back {
+        background-image: url('../images/grayscalemap_wide.jpg') !important;
+    }
+}
+
+@media all and (orientation: portrait) {
+    .back {
+        background-image: url('../images/grayscalemap_wide.jpg') !important;
+    }
+}
+
+ .stripe {
+    background-color: black;
+    width:100%;  
+    top:0;
+    position:absolute;
+ }
+
+ div.stripe div.menu div {
+    color:white; 
+    font-weight: bold; 
+    padding-top: 10px; 
+    padding-right:40px;
+    padding-left:40px;
+}
+
+ .menu {
+     height:100%;
+     width:100%;
+     overflow:auto;
+     padding:0px;
+     margin:0 auto;
+ }
+.menuContainer {
+    margin:0 auto;
+}
+
+.icons {
+    float: left;
+    margin: 10px;
+
+    text-align:center;
+    background-color:white;
+    overflow: hidden
+}
+
+.iconSize {
+    width:325px;
+    height:250px;
+    border:2px solid white;
+    border-radius: 20px;
+}
+
+.icon {
+    vertical-align:middle;
+    font-size:20px;
+    color:white;
+}
+
+.stripeSize {
+    height: 40px;
+}
+
+.paddingIconSize {
+    clear:both;
+    height:40px
+}
+
+.icons a {
+    text-decoration:none;
+    color:white;
+}
+
+#overlay {
+   font-size:25px;
+    display: none; 
+    position: absolute;
+    left: 5%; 
+    top: 5%; 
+    padding: 5px; 
+    width: 90%;
+    height: 90%;
+    z-index: 100;        
+ }
+
+#overlayHeader {
+    height:10%;    
+}
+
+#overlayNav {
+    clear:both;
+    width:100%;
+    height:60%;
+}
+
+.overlayNavElement {
+    float:left;
+    width:10%;
+    position:relative;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+#workIcon {
+    opacity:.6; 
+    float:left;
+}
+
+#workBody {
+    float:left;
+    width:80%;
+    position:relative;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+#workImage {
+    text-align:center;
+    margin:0 auto;
+    max-width: 50%;
+}
+
+#workText {
+    color:gray;
+    padding: 60px 60px 0px 60px;
+    text-align:left;
+    font-size: 12pt;
+    max-width: 1000px;
+    margin:0 auto;
+    line-height: 1.25;
+}
+
+#overlayNavNext {
+    text-align:right;
+}
+
+ #fade {
+    display: none; 
+    position: absolute;  
+    left: 0%; 
+    top: 0%; 
+    background-color: black; 
+    width: 100%;
+    height: 100%;
+    z-index: 90; 
+ }
+ #detailOverlay {
+    display: none; 
+    position: absolute;
+    left: 50%; 
+    top: 5%; 
+    padding: 5px; 
+    width: 90%;
+    height: 90%;
+    z-index: 120;    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transform:translateY(-50%);
+    transform:translateX(-50%);
+}
+#detailFade {
+    display: none; 
+    position: absolute;  
+    left: 0%; 
+    top: 0%; 
+    background-color: black; 
+    width: 100%;
+    height: 100%;
+    z-index: 110; 
+ }
+#glassScreen {
+    display: none; 
+    position: absolute;  
+    left: 0%; 
+    top: 0%; 
+    background-color: transparent; 
+    width: 100%;
+    height: 100%;
+    z-index: 1000; 
+ }
+
+
+.zoomIn {
+    cursor: -moz-zoom-in; 
+    cursor: -webkit-zoom-in; 
+    cursor: zoom-in;
+}
+
+.zoomOut {
+    cursor: -moz-zoom-out; 
+    cursor: -webkit-zoom-out; 
+    cursor: zoom-out;
+}
+
+#closeDialog {
+    text-decoration:none;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size:2em;
+    color:white;
+    opacity:.6;
+}
+
+.workIcon {
+    font-size:2em;
+    color:white;
+}
+
+.workNav {
+        font-size:2em;
+        color:white;
+        font-weight:bold;
+        text-decoration:none;
+        opacity: .6;
+  }
+
+.leftWorkNav {
+    width:30%;
+}
+
+.middleWorkNav {
+    float:left;
+    text-align:center;
+    color:white;
+    width:40%;
+}
+
+.rightWorkNav {
+    float:right;
+    width:30%;
+    text-align:right;
+}
