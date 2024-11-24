@@ -1,1 +1,148 @@
-<html><body>Coming Soon</body></html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" integrity="sha384-XGjxtQfXaH2tnPFa9x+ruJTuLE3Aa6LhHSWRr1XeTyhezb4abCG4ccI5AkVDxqC+" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" crossorigin="anonymous"></script>
+    <script src="js/portfolio.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+  </head>
+  <body class="back">
+    <div id="menu" class="menu">
+      <div id="menuContainer" class="menuContainer">    
+      </div>
+    </div>
+
+    <div class="stripe stripeSize">
+        <div class="menu">
+          <div style="float:left;"><a style="text-decoration:none;" href="#" onclick="showWork('data-intro',true)"><i class="bi bi-person-circle icon" style="vertical-align:bottom;"></i> Wes' GIS Portfolio</a></div>
+          <div style="float:right"><a target="_blank" href="https://linkedin.com/in/wesmwilliams"><i class="bi bi-linkedin icon"></i></a> &nbsp; <a target="_blank" href="https://github.com/gis-wes/"><i class="bi bi-github icon"></i></a></div>
+        </div>
+    </div>
+
+    <div id="overlay">
+        <div id="overlayHeader">
+            <div id="workIcon" class="leftWorkNav"></div>
+            <div id="workTitle" class="middleWorkNav"></div>
+            <div class="rightWorkNav"><a id="closeDialog" href="#" onclick="hideWork()"><i class="bi bi-x-circle"></i></a></div> 
+        </div>
+
+        <div id="overlayNav">
+            <div id="overlayNavPrev" class="overlayNavElement"><a id="prevWork" class="workNav" href="#"><i class="bi bi-arrow-left-short"></i></a></div>
+            <div id="workBody" href="#">
+                <a class="zoomIn" href="#" onclick="largeWork(this);"><div id="workImage"></div></a> 
+            </div>
+            <div id="overlayNavNext" class="overlayNavElement"><a id="nextWork" class="workNav" href="#"><i class="bi bi-arrow-right-short"></i></a></div>  
+        </div>
+        <div id="workText"></div>
+
+      </div>
+      <div id="detailOverlay">
+      </div>
+      <div id="detailFade"></div>
+      <div id="fade"></div>
+      <div id="glassScreen" class="zoomOut"></div>
+      
+      <!-- DATA GOES HERE -->
+
+    <div id="database">
+      <div id="menuDatabase">
+        <div id="data-intro">
+          <div id="dataTitle">Wes' GIS Portfolio</div>
+         <div id="dataText">This portfolio contains sample work produced in 2024 while completing ~70 credits in undergraduate GIS and UAS certificate programs. My studies included cartography, photogrammetry, remote sensing, and geospatial anaylsis. </div>
+          <div id="dataImage"><img class="dataImageSource" src="images/grayscalemap_wide.jpg"></div>
+          <div id="dataIcon"><i class="bi bi-person-circle icon"></i></div>
+          <div id="dataTags">#intro</div>
+        </div>
+      </div>
+      
+      <div id="workDatabase">
+        <div id="data-craterlake">
+          <div id="dataTitle">Crater Lake</div>
+         <div id="dataText">This cartography focused layout explored the potential of 3D scenes and photography to capture the impressiveness of Crater Lake Nation Park. It highlights the elevation and areas of interest for visitors.</div>
+          <div id="dataImage"><img class="dataImageSource" src="images/portfolio/craterlake.jpg"></div>
+          <div id="dataIcon"><i class="bi bi-palette icon"></i></div>
+          <div id="dataTags">#cartography #3d #spring2024</div>
+        </div>
+        <div id="data-3dtiles">
+          <div id="dataTitle">3D Map Streaming Standards</div>
+         <div id="dataText">This research oriented <a target="_blank" href="https://storymaps.arcgis.com/stories/753a1bafd20f48a19449347841cdae24">story map</a> explores standards for streaming 3D imagery including 3D Tiles from Cesium and Indexed 3D Scene Layers (I3S) from Esri.</div>
+          <div id="dataImage"><img class="dataImageSource" src="images/portfolio/3dtiles.jpg"></div>
+          <div id="dataIcon"><i class="bi bi-box icon"></i></div>
+          <div id="dataTags">#photogrammetry #3d #summer2024</div>
+        </div>
+        <div id="data-gee">
+          <div id="dataTitle">Google Earth Engine</div>
+          <div id="dataText">This research oriented <a target="_blank" href="https://storymaps.arcgis.com/stories/36478b26211b44518b5fa3d4d285fcca">story map</a> explores how students can leverage GPT in remote sensing with Google Earth Engine to learn and prototype.</div>
+          <div id="dataImage"><img class="dataImageSource" src="images/portfolio/gee.jpg"></div>
+          <div id="dataIcon"><i class="bi bi-globe-americas icon"></i></div>
+          <div id="dataTags">#cloud #ai #remote-sensing #summer2024</div>
+        </div>
+        <div id="data-cropvine">
+          <div id="dataTitle">U-Pick Crowd Mapping</div>
+          <div id="dataText">This interactive <a target="_blank" href="https://cropvine.com/">mobile-first website</a> enables u-pick fruit enthusiast to report what's available at PNW farms. Geofencing and a short lifespan of entries gamify data collection for those at the farm and provide breadcrumbs for others seeking a farms with active u-pick. More details are available in this <a target="_blank" href="https://storymaps.arcgis.com/stories/d6691942174a4e158ded6ff9301268f6">story map</a>.</div>
+          <div id="dataImage"><img class="dataImageSource" src="images/portfolio/cropvine.jpg"></div>
+          <div id="dataIcon"><i class="bi bi-geo-alt icon"></i></div>
+          <div id="dataTags">#mobile #interactive #spring2024</div>
+        </div>
+        <div id="data-fruitnetworkanalysis">
+          <div id="dataTitle">U-Pick Network Analysis</div>
+         <div id="dataText">This network analysis found the closest routes to u-pick farms near Portland from multiple starting locations. Multiple destinations and traversal were provided for each point of origin. The results formed an optimized, personal fruit loop based on availability for a given day.</div>
+          <div id="dataImage"><img class="dataImageSource" src="images/portfolio/networkanalysis.jpg"></div>
+          <div id="dataIcon"><i class="bi bi-diagram-3 icon"></i></div>
+          <div id="dataTags">#network-analysis #spring2024</div>
+        </div>
+        <div id="data-fruitinfographic">
+          <div id="dataTitle">Farmers Infographic</div>
+         <div id="dataText">This infographic explores the distribution of u-pick farms and farmers markets within 10 miles of major cities along the I-5 corridor in Oregon and Washington. The charts visualize both the quantity and ratio of each for cities along this route.</div>
+          <div id="dataImage"><img class="dataImageSourceTall" src="images/portfolio/fruitinfographic.jpg"></div>
+          <div id="dataIcon"><i class="bi bi-bar-chart icon"></i></div>
+          <div id="dataTags">#infographic #spring2024</div>
+        </div>
+        <div id="data-gpsanalysis">
+          <div id="dataTitle">GPS Analysis</div>
+         <div id="dataText">This analysis studied the precision and accuracy of different GPS receivers. High accuracy of the position for the intended target was captured with a high-end receiver and compared against many observations from integrated and low-cost external receivers with various configurations.</div>
+          <div id="dataImage"><img class="dataImageSource" src="images/portfolio/gpsanalysis.jpg"></div>
+          <div id="dataIcon"><i class="bi bi-pin-map icon"></i></div>
+          <div id="dataTags">#data-collection #fall2024</div>
+        </div>
+        <div id="data-heatislands">
+          <div id="dataTitle">Heat Islands</div>
+         <div id="dataText">This analysis studied three decades of thermal satellite imagery to discover the average temperature increase for quadrants of Portland metro. Top contributing cities were identified by quadrant. Indicating these experienced more land development in that quadrant.</div>
+          <div id="dataImage"><img class="dataImageSourceTall" src="images/portfolio/heatislands.jpg"></div>
+          <div id="dataIcon"><i class="bi bi-globe-americas icon"></i></div>
+          <div id="dataTags">#remote-sensing #fall2024</div>
+        </div>
+        <div id="data-mlclassify">
+          <div id="dataTitle">ML Classification</div>
+         <div id="dataText">This anaylsis compared the classification of land types with supervised and unsupervised techniques. It utilized four band aerial imagery and feature heights from lidar for a section of land along the Willamette river in Portland.</div>
+          <div id="dataImage"><img class="dataImageSourceTall" src="images/portfolio/mlclassify.jpg"></div>
+          <div id="dataIcon"><i class="bi bi-globe-americas icon"></i></div>
+          <div id="dataTags">#remote-sensing #fall2024</div>
+        </div>
+         <div id="data-pdxhaxards">
+          <div id="dataTitle">PDX Hazards</div>
+         <div id="dataText">This analysis studies the individual and combined flood, heat and demographic risks in Portland metro. Flood risk were computed with hydrlogic tools from a DEM of the area. Heat risk was determined from thermal satellite imagery. The census bureau's ACS dataset contained demographics for studying socioeconmic vulnerability.</div>
+          <div id="dataImage"><img class="dataImageSourceTall" src="images/portfolio/pdxhazards.jpg"></div>
+          <div id="dataIcon"><i class="bi bi-globe-americas icon"></i></div>
+          <div id="dataTags">#remote-sensing #fall2024</div>
+        </div>
+        <div id="data-ppk">
+          <div id="dataTitle">Post Processed Kinematics</div>
+         <div id="dataText">This experiment explored methods for establishing ground control points for UAS missions. Results from low-cost GPS receivers were corrected with open source software and compared against results from high-end equipment.</div>
+          <div id="dataImage"><img class="dataImageSourceTall" src="images/portfolio/ppk.jpg"></div>
+          <div id="dataIcon"><i class="bi bi-pin-map icon"></i></div>
+          <div id="dataTags">#data-collection #fall2024</div>
+        </div>
+        <div id="data-wildlifecorridor">
+          <div id="dataTitle">Wildlife Corridors</div>
+         <div id="dataText">A first exploration of georeferencing, digitization, and cartographic techniques for the purposes of site selection.</div>
+          <div id="dataImage"><img class="dataImageSource" src="images/portfolio/wildlifecorridor.jpg"></div>
+          <div id="dataIcon"><i class="bi bi-pin-map icon"></i></div>
+          <div id="dataTags">#georeferencing #winter2024</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
