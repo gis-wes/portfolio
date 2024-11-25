@@ -10,6 +10,12 @@
     height:90%;
 }
 
+@media screen and (max-device-width:700px) and (orientation: portrait)  {
+    .dataImageSourceTall {
+        height:50%;
+    }
+}
+
 a,a:visited,a:link {
     color:white;
     text-underline-offset: 2pt;
