@@ -17,9 +17,6 @@ $(document).ready(function (){
         menuContainer.append(newIcon);
     });
 
-    // add space after icons
-    menuContainer.append('<div class="paddingIconSize">&nbsp;</div>');
-
     // recognize click of icons
     $('.work').click(function(evt) {
         showWork(evt.currentTarget.id);

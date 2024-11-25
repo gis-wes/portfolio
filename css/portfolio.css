@@ -323,3 +323,11 @@ a,a:visited,a:link {
     width:30%;
     text-align:right;
 }
+
+.copyright {
+    clear: both;
+    font-size: 1em;
+    color:white;
+    padding: 20px;
+    text-align: center;
+}
