@@ -68,7 +68,7 @@ a,a:visited,a:link {
 
 @media all and (orientation: portrait) {
     .back {
-        background-image: url('../images/grayscalemap_wide.jpg') !important;
+        background-image: url('../images/grayscalemap_tall.jpg') !important;
     }
 }
 
